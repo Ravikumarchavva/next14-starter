@@ -26,3 +26,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Abstract
+
+```Implementation  of full stact web app using next.js
+    react next.js
+    Mongodb
+```
