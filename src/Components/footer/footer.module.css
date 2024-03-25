@@ -1,0 +1,16 @@
+.footerContainer{
+    width:100vw;
+    height: 5vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--bgSoft); */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    /* margin-top: 50px; */
+}
+
+.footerContainer .h6{
+    font-size: 0.5vw;
+    color: #fff;
+}

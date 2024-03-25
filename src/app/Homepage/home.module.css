@@ -1,0 +1,106 @@
+.homeContainer{
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    }
+.textContainer h1{
+    font-size: 80px;
+    margin-left: 10px;
+}
+.textContainer p{
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.linksContainer{
+    position: relative;
+    min-height: 200px;
+    padding-inline: 30px;
+}
+.imgContainer{
+    position: relative;
+    min-height: 500px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.imgContainer img{
+    object-fit: contain;
+}
+.brands{
+    width: 90%;
+    min-height: 100px;
+    filter: grayscale(1);
+    position: relative;
+}
+
+
+.buttons{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 30px;
+    margin-top: 30px;
+}
+.button1{
+    min-width: 100px;
+    padding: 10px;
+    background-color: var(--btn);
+    color: var(--textSoft);
+    border-radius: 5px;
+    margin-top:10px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.button1:hover{
+    background-color: var(--textSoft);
+    color: var(--btn);
+}
+.button2{
+    min-width: 100px;
+    padding: 10px;
+    background-color: var(--textSoft);
+    color: var(--btn);
+    border-radius: 5px;
+    margin-top:10px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.button2:hover{
+    background-color: var(--btn);
+    color: var(--textSoft);
+}
+
+@media (max-width:755px){
+    .homeContainer{
+        min-width: 260px;
+        grid-template-columns: 1fr  ;
+        align-items: flex-start;
+    }
+    .imgContainer{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        min-height: 200px;
+    }
+    .textContainer h1{
+        font-size: 30px;
+    }
+    .linksContainer{
+        filter: grayscale(0);
+    }
+
+}

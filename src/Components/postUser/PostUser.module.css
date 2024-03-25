@@ -1,0 +1,23 @@
+.detailText{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding: 5px;
+    gap: 20px;
+    border: 2px solid var(--text);
+    border-radius: 2vw;
+} 
+
+@media screen and (max-width: 768px){
+    .detailText{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        padding: 5px;
+        gap: 20px;
+        border: 2px solid var(--text);
+        border-radius: 2vw;
+    }
+}
